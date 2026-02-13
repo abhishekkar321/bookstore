@@ -6,6 +6,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar';
 import Footer from './components/Footer';
+import Hmes from './Pages/Hmes';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,7 @@ function App() {
     <Router>
       <Navbar/>
             <Routes>
-              
+               <Route path="/"  element={<Hmes/>}/>
             </Routes>
 
       <Footer/>
