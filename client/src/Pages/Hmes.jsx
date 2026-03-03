@@ -5,41 +5,46 @@ function Hmes() {
   return (
     <div style={styles.container}>
       
-      {/* Header */}
-      <header style={styles.header}>
-        <h1 style={styles.logo}>📚 BookStore</h1>
-        <nav>
-          <a href="/" style={styles.link}>Home</a>
-          <a href="/books" style={styles.link}>Books</a>
-          <a href="/about" style={styles.link}>About</a>
-          <a href="/contact" style={styles.link}>Contact</a>
-        </nav>
-      </header>
+  {/* Header */}
+  <header style={styles.header}>
+    <h1 id="logo" style={styles.logo}>📚 BookStore</h1>
 
-      {/* Hero Section */}
-      <section style={styles.hero}>
-        <h2>Discover Your Next Favorite Book</h2>
-        <p>Explore thousands of books from all genres at one place.</p>
-        <button style={styles.button}>Browse Books</button>
-      </section>
+    <nav>
+      <a id="homeLink" href="/" style={styles.link}>Home</a>
+      <a id="booksLink" href="/books" style={styles.link}>Books</a>
+      <a id="aboutLink" href="/about" style={styles.link}>About</a>
+      <a id="contactLink" href="/contact" style={styles.link}>Contact</a>
+    </nav>
+  </header>
 
-      {/* Categories */}
-      <section style={styles.section}>
-        <h3>Popular Categories</h3>
-        <div style={styles.cardContainer}>
-          <div style={styles.card}>Fiction</div>
-          <div style={styles.card}>Non-Fiction</div>
-          <div style={styles.card}>Technology</div>
-          <div style={styles.card}>Self-Help</div>
-        </div>
-      </section>
+  {/* Hero Section */}
+  <section style={styles.hero}>
+    <h2>Discover Your Next Favorite Book</h2>
+    <p>Explore thousands of books from all genres at one place.</p>
 
-      {/* Footer */}
-      <footer style={styles.footer}>
-        <p>© 2026 BookStore. All rights reserved.</p>
-      </footer>
+    <button id="browseBtn" style={styles.button}>
+      Browse Books
+    </button>
+  </section>
 
+  {/* Categories */}
+  <section style={styles.section}>
+    <h3>Popular Categories</h3>
+
+    <div style={styles.cardContainer}>
+      <div id="fictionCard" style={styles.card}>Fiction</div>
+      <div id="nonFictionCard" style={styles.card}>Non-Fiction</div>
+      <div id="technologyCard" style={styles.card}>Technology</div>
+      <div id="selfHelpCard" style={styles.card}>Self-Help</div>
     </div>
+  </section>
+
+  {/* Footer */}
+  <footer id="footer" style={styles.footer}>
+    <p>© 2026 BookStore. All rights reserved.</p>
+  </footer>
+
+</div>
   )
 }
 
