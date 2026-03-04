@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar';
 import Footer from './components/Footer';
 import Hmes from './Pages/Hmes';
+import Login from './components/Login/Login';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <Navbar/>
             <Routes>
                <Route path="/"  element={<Hmes/>}/>
+                <Route path="/login" element={<Login/>}/>
             </Routes>
 
       <Footer/>
